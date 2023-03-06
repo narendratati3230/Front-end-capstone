@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4f9d8b6c.css",
+    "main.js": "/static/js/main.c4d2fbd8.js",
+    "static/js/787.6ba41335.chunk.js": "/static/js/787.6ba41335.chunk.js",
+    "static/media/LemonImage.png": "/static/media/LemonImage.15b7a3592e31804433ea.png",
+    "static/media/phone2.png": "/static/media/phone2.48819a3c2ecfd7bfb56e.png",
+    "static/media/logo.png": "/static/media/logo.e68246686f716ff6e5d8.png",
+    "index.html": "/index.html",
+    "main.4f9d8b6c.css.map": "/static/css/main.4f9d8b6c.css.map",
+    "main.c4d2fbd8.js.map": "/static/js/main.c4d2fbd8.js.map",
+    "787.6ba41335.chunk.js.map": "/static/js/787.6ba41335.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4f9d8b6c.css",
+    "static/js/main.c4d2fbd8.js"
+  ]
+}
