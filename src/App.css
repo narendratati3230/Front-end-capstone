@@ -1,0 +1,264 @@
+:root {
+  --primary: #F4CE14;
+  --primary-hover: #495E57;
+  --secondary: #EE9972;
+  --secondary-hover: #FBDABB;
+  --light: #EDEFEE;
+  --dark: #333333;
+  --font-family: "Markazi",'Courier New', Courier, monospace, Arial;
+  --base-font-size: 16px;
+  --base-line-height: 150%;
+  --border-rounded: 16%;
+  --border-rounded-btn: 16px;
+}
+
+.App {
+  text-align: left;
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.App-header {
+  background-color: var(--primary-hover);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+/* Custom for Lemon Style Guides */
+.chakra-stack {
+  max-width: 100%;
+}
+button[type="submit"], .chakra-button{
+  background-color: var(--primary);
+  color: var(--dark);
+}
+button[type="submit"]:active, input[type="submit"]:hover, .chakra-button:hover{
+  background-color: var(--primary-hover) !important;
+  color: var(--light);
+}
+.btn-primary {
+  background-color: var(--primary) !important;
+  color: var(--dark);
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: var(--primary-hover) !important;
+  transform: rotateX('360');
+  color: var(--light);
+}
+
+.btn-secondary {
+  color: var(--light);
+  background-color: var(--secondary);
+}
+
+.btn-secondary:hover,
+.btn-secondary:active {
+  color: var(--dark);
+  background-color: var(--secondary-hover);
+  transform: rotateX('360');
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+  
+  h2 {
+    font-size: 18px;
+  }
+  *{
+    font-size: 16px;
+  }
+}
+
+p {}
+
+body {
+  color: var(--light);
+  font-family: var(--font-family);
+}
+nav{
+  list-style: none;
+}
+nav ul{
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
+  list-style: none;
+  justify-content: space-around;
+  text-transform: uppercase;
+}
+li a{
+  text-transform: unset;
+  text-decoration: none;
+  padding: 10px;
+}
+a.active{
+  background-color: var(--primary);
+ 
+}
+a:hover{
+  background-color: var(--primary);
+ 
+}
+p{
+  text-align: left;
+}
+
+header > img {
+  display: block;
+  margin: auto;
+}
+
+.App-logo{
+  width: 100px;
+  height: 50px;
+}
+h1{
+  text-align: left;
+  font-size: 52px;
+}
+h2{
+  text-align: left;
+  font-size: 40px;
+}
+section{
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
+  list-style: none;
+}
+article{
+  flex: 1;
+  text-align: left;
+}
+#summary{
+
+}
+footer{
+  margin-top: 3rem;
+  background-color: var(--light);
+  color: var(--primary-hover);
+}
+footer *{
+  text-align: center;
+  
+}
+
+/* Main Page area */
+main{
+  margin-bottom: 3rem;
+  background-color: var(--light);
+  color: var(--dark);
+}
+main a{
+  color: var(--dark);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Hero Section  */
+
+.hero-section-container{
+  background-color: var(--primary-hover);
+  color: var(--light);
+  justify-content: center;
+  justify-items: center;
+  display: block;
+}
+
+.switch {
+  position: absolute;
+  display: inline-block;
+  right: 32px;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
